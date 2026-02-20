@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>پنل ربات شیشه‌ای</title>
+<style>
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('background.jpg') no-repeat center/cover;
+    font-family: Tahoma, sans-serif;
+}
+
+.glass-panel {
+    background: rgba(255, 255, 255, 0.2); /* شفافیت */
+    backdrop-filter: blur(10px);          /* محو پس‌زمینه */
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 40px;
+    text-align: center;
+    color: #fff;
+    width: 90%;
+    max-width: 400px;
+}
+
+button {
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    padding: 15px 30px;
+    border-radius: 15px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+    backdrop-filter: blur(5px);
+}
+button:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+</style>
+</head>
+<body>
+<div class="glass-panel">
+    <h2>ℹ️ هیچ گروه فعالی برای شما ثبت نشده است.</h2>
+    <button onclick="alert('گروه پشتیبانی!')">🛠 گروه پشتیبانی</button>
+    <button onclick="alert('بزرگترین لینکدونی!')">📌 بزرگترین لینکدونی</button>
+    <button onclick="alert('گروه‌های من!')">📂 گروه‌های من</button>
+    <button onclick="alert('راهنمای بات!')">📖 راهنمای بات</button>
+    <button onclick="alert('تعداد گروه‌ها: 0')">📊 تعداد گروه‌ها</button>
+</div>
+</body>
+</html>
